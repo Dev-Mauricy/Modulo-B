@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 04 (CV 06)</title>
+    <style>
+        body{
+            background-color: rgb(89, 59, 199);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1{
+            color: white;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        // Pode colocar sem o 'Number também'
+
+        // FORMA ANTIGA DE SE FAZER A CONVERSÃO
+        //var n1 = Number.parseInt(window.prompt('Digite um número: ')) // String > number
+        //var n2 = Number.parseInt(window.prompt('Digite um número: ')) //String > Number
+        // FORMA ANTIGA DE SE FAZER A CONVERSÃO
+        
+        // Nova forma de converter STRING em NUMBER, Nessa nova forma o JS detecta se é INT ou FLOAT
+        var n1 = Number(window.prompt('Digite um numero: '))//String
+        var n2 = Number(window.prompt('Digite um número: '))//String
+        var s = n1 + n2 // Precisa converter para NUMBER
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        // (number + number) para adição
+        // (string + string) para concatenação
+        
+    </script>
+
+</body>
+</html>
