@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 05</title>
+    <style>
+        body{
+            background: blue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div class="msg">Clique em mim</div>
+    <script>
+        /* - Primeiro Exemplo - 
+        - Usando o seletor de tags, de estilo
+
+            window.document.write('Ola, Mundo </br>') // Inserindo através do DOM
+            window.document.write(window.document.charset + '</br>') // Usando o DOM para mostrar o Charset
+            window.document.write(window.navigator.appName + '</br>')// Usando DOM para mostrar o navegador
+            var p1 = window.document.getElementsByTagName('p')[0]
+            window.document.write('Está escrito assim: ' + p1.innerText)//InnerText = Texto dentro da tag, sem formatação
+            p1.style.color = 'blue' // Usando para estilizar
+            // Selecionando por tags, nesse caso a tag <p>, o '0'  mostra qual <p> ele irá selecionar
+        */
+
+        /* 
+        --- Segundo Exemplo ---
+        - Usando seletor de iD e mostrando o comando por atalho e por inteiro
+
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou Aguardando...' // Aqui é basicamente um corta caminho
+        window.document.getElementById('msg');innerText = 'Olá!'
+        // Comando por inteiro
+        */
+
+        /*
+        -- Terceiro Exemplo --
+        - Usando o querySelector
+
+        var d = window.document.querySelector('div.msg')
+        d.style.color = 'blue'
+
+        */
+
+
+
+
+    </script>
+</body>
+</html>
