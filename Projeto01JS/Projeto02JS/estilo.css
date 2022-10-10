@@ -4,11 +4,13 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: rgb(70, 18, 133);
     
 }
 
 .header{
     text-align: center;
+    color: white;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5em;
@@ -21,13 +23,13 @@ body{
     display: block;
     width: 30vw;
     border-radius: 20px;
-    background: rgb(125, 125, 233);
+    background: rgb(119, 18, 235);
     padding: 20px;
     margin: auto;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.877);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.877);
     
 }
 .idade, .sexo, .button{
@@ -43,6 +45,7 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
+    color: white;
 }
 img{
     display: block;

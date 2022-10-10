@@ -25,10 +25,10 @@ function  verificar(){
             }else{
                 //idoso
                 img.setAttribute('src', 'idosof.jpg')
-            }
+            } 
 
         } else if (fsex[1].checked){
-            genero = 'Masculino'
+            genero = 'Homem'
             if (idade >=0 && idade < 10){
                 //Criança
                 img.setAttribute('src', 'bebem.jpg')
@@ -38,14 +38,22 @@ function  verificar(){
             }else if (idade < 50){
                 //Adulto
                 img.setAttribute('src', 'adultom.jpg')
-            }else{
+            }else {
                 //Idoso
                 img.setAttribute('src','idosom.jpg')
-            }
+            } 
         }
+        if (idade <120){
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
         res.appendChild(img)
+        }
+        else{
+            res.style.textAlign = 'center'
+        res.innerHTML = `FOI DE BASE, F`
+        res.appendChild(img)
+        img.setAttribute('src', 'rip.jpg')
+        }
     }
     
 }
